@@ -5,6 +5,7 @@ namespace CoreTests
         [SetUp]
         public void Setup()
         {
+            //Testing file 2
         }
 
         [Test]
