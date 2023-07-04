@@ -1,0 +1,40 @@
+﻿@page
+@model WebApp.Pages.UserModel
+@{
+}
+<div class="text-center">
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>
+					FirstName
+				</th>
+				<th>
+					LastName
+				</th>
+				<th>
+					Email
+				</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var obj in Model.user)
+			{
+				<tr>
+					<th>
+						@obj.FirstName
+					</th>
+					<th>
+						@obj.LastName
+					</th>
+					<th>
+						@obj.Email
+					</th>
+					
+
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>

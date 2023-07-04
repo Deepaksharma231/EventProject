@@ -1,21 +1,22 @@
-﻿using System;
+﻿using CoreLogic.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CoreLogic.Models;
 
 namespace CoreLogic.Services
 {
-    public class UserService
+   public class UserService
     {
-        public List<User> GetAll()
+      public List<User> GetAll()
         {
-            var users=new List<User>()
+            var users = new List<User>()
             {
-                new User() {Id=1,FirstName="Bhuvan",LastName="Koduri",Email="bhuvankoduri4800@gmail.com"},
-                new User(){Id=1,FirstName="Bhargav",LastName="Chilukuri",Email="bhargxv@gamil.com"}
-            };
+                 new User() { Id=1 , FirstName = "Sahib" , LastName="Kumar",Email="saheb123@gmail.com"},
+                 new User() { Id=2 , FirstName = "deepak" , LastName="Kumar",Email="deepak123@gmail.com"},
+				 new User() { Id=3 , FirstName = "bhuvan" , LastName="Kumar",Email="bhuvan123@gmail.com"}
+			};
             return users;
         }
     }

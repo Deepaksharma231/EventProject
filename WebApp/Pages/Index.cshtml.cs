@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CoreLogic.Model;
+using CoreLogic.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebApp.Pages
@@ -11,10 +13,12 @@ namespace WebApp.Pages
         {
             _logger = logger;
         }
-
+        
         public void OnGet()
         {
+            
 
-        }
+
+		}
     }
 }
