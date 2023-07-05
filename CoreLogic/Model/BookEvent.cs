@@ -14,7 +14,9 @@ namespace CoreLogic.Model
         public string? Venue { get; set; }
         public int NoofGuest { get; set; }
         [DataType(DataType.Date)]
-        public string BookingDate { get; set; }
+        public DateTime BookingDate { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; }
 
     }
 }

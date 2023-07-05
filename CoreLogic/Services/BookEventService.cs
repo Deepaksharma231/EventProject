@@ -10,14 +10,30 @@ namespace CoreLogic.Services
 {
     public class BookEventService
     {
-       
 
-        public List<BookEvent> GetAllEventDetails()
+
+        private readonly MyContext _ctx;
+
+		public BookEventService()
+		{
+			_ctx = new MyContext();
+		}
+		
+
+		
+
+		public List<BookEvent> GetAllEventDetails()
         {
-           MyContext ctx = new MyContext();
+			// MyContext _ctx = new MyContext();
 
-            var bookevent=ctx.BookEvents.ToList();
-            return bookevent;
+			var bookevent =_ctx.BookEvents.ToList();
+             return bookevent;
+        }
+        public void AddBookEvent(BookEvent bookEvent)
+        {
+           // MyContext _ctx = new MyContext();
+            _ctx.BookEvents.Add(bookEvent);
+            _ctx.SaveChanges();
         }
 
     }

@@ -1,3 +1,4 @@
+using CoreLogic.Data;
 using CoreLogic.Model;
 using CoreLogic.Services;
 using Microsoft.AspNetCore.Mvc;

@@ -21,6 +21,7 @@
 				</th>
 			</tr>
 		</thead>
+		<a href="/EventPages/Create" class="btn btn-primary">Create Event</a>
 		<tbody>
 			@foreach (var obj in Model.bookEvents)
 			{
@@ -37,7 +38,7 @@
 					<th>
 						@obj.BookingDate
 					</th>
-
+					
 				</tr>
 			}
 		</tbody>
